@@ -1,0 +1,221 @@
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  width: 100%;
+  height: 74px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 60px;
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+  border-bottom: 1px solid #e8e8e8;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.navbar-logo {
+  color: #222222;
+  text-decoration: none;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.navbar-logo:hover {
+  color: #315f45;
+}
+
+
+/* =========================================
+   MAIN NAVIGATION
+========================================= */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+
+  gap: 40px;
+
+  margin-left: auto;
+  margin-right: 55px;
+}
+
+.navbar-links a {
+  color: #333333;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  padding: 8px 0;
+
+  transition:
+    color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: #315f45;
+}
+
+.navbar-links a.active {
+  color: #315f45;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   PROFILE + CART
+========================================= */
+
+.navbar-account-links {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  flex-shrink: 0;
+}
+
+
+/* Icon button */
+
+.navbar-icon-link {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #222222;
+  text-decoration: none;
+
+  border-radius: 50%;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+
+/* SVG icon */
+
+.navbar-icon {
+  width: 22px;
+  height: 22px;
+
+  display: block;
+
+  color: #222222;
+}
+
+
+/* Hover */
+
+.navbar-icon-link:hover {
+  color: #315f45;
+  background-color: #f2f5ef;
+}
+
+.navbar-icon-link:hover .navbar-icon {
+  color: #315f45;
+}
+
+
+/* Active page */
+
+.navbar-icon-link.active {
+  color: #315f45;
+  background-color: #f2f5ef;
+}
+
+.navbar-icon-link.active .navbar-icon {
+  color: #315f45;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.navbar-login {
+  height: 44px;
+  min-width: 84px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  color: #333333;
+  background-color: #ffffff;
+
+  border: 1px solid #333333;
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.navbar-login:hover {
+  color: #315f45;
+  background-color: #f5f7f3;
+  border-color: #315f45;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0 30px;
+  }
+
+  .navbar-links {
+    gap: 24px;
+    margin-right: 25px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .navbar {
+    height: 68px;
+    padding: 0 20px;
+  }
+
+  .navbar-logo {
+    font-size: 23px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-account-links {
+    margin-left: auto;
+  }
+}
